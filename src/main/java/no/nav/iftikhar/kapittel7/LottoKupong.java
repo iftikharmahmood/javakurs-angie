@@ -1,4 +1,4 @@
-package kapittel7;
+package no.nav.iftikhar.kapittel7;
 
 import java.util.Random;
 
