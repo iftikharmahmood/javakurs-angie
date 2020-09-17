@@ -1,4 +1,4 @@
-package kapittel2;
+package no.nav.iftikhar.kapittel2;
 
 import java.util.Scanner;
 
