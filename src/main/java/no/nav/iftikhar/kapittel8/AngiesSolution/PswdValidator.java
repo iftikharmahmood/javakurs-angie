@@ -1,4 +1,4 @@
-package kapittel8.AngiesSolution;
+package no.nav.iftikhar.kapittel8.AngiesSolution;
 
 import java.util.Scanner;
 

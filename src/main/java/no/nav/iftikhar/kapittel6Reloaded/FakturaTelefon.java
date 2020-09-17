@@ -1,4 +1,4 @@
-package no.nav.iftikhar.Kapittel6Reloaded;
+package no.nav.iftikhar.kapittel6Reloaded;
 
 /*
 *Driver programmet til TelefonFaktura3

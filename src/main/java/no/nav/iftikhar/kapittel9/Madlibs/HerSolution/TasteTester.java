@@ -1,4 +1,4 @@
-package kapittel9.Madlibs.HerSolution;
+package no.nav.iftikhar.kapittel9.Madlibs.HerSolution;
 
 public class TasteTester {
     public static void main(String[] args){

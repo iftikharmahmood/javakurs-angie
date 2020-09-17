@@ -1,4 +1,4 @@
-package kapittel7Reloaded;
+package no.nav.iftikhar.kapittel7Reloaded;
 
 /*
  * Et program som skriver ut en tilfeldig tallrekke på 11 heltall, av en serie på 10 rader.

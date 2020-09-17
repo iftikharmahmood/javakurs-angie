@@ -1,4 +1,4 @@
-package kapittel7Madlibs;
+package no.nav.iftikhar.kapittel7Madlibs;
 
 /*
 * The program output the String that represents the day of the week that corresponds to the number that the user input.

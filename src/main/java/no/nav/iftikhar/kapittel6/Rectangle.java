@@ -1,4 +1,4 @@
-package no.nav.iftikhar.Kapittel6;
+package no.nav.iftikhar.kapittel6;
 
 public class Rectangle {
 

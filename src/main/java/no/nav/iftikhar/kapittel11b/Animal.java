@@ -1,4 +1,4 @@
-package kapittel11b;
+package no.nav.iftikhar.kapittel11b;
 
 import java.util.Scanner;
 
@@ -12,15 +12,9 @@ import java.util.Scanner;
  */
 public abstract class Animal {
 
-    abstract void makeSound();
+    public abstract void makeSound();
 
       public void eat(){
-          Animal animal = new Animal() {
-              @Override
-              void makeSound() {
-
-              }
-          }
          Scanner scanner = new Scanner(System.in);
          String dyreFor;
          System.out.println("tast inn type dyrefor du vil mate dyret med:  ");

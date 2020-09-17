@@ -1,4 +1,4 @@
-package kapittel8;
+package no.nav.iftikhar.kapittel8;
 /*
 *Lage et program som ivaretar koplese sikkerheten i passordet ved at
 * den påser at passordets regler følges

@@ -1,4 +1,4 @@
-package kapittel11.AngieSolution;
+package no.nav.iftikhar.kapittel11.AngieSolution;
 
 public class ShapeTester {
 

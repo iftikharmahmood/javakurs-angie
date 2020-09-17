@@ -1,4 +1,4 @@
-package kapittel9.Madlibs;
+package no.nav.iftikhar.kapittel9.Madlibs;
 
 /**
  * Ja det er fredag idag og derfor passer denne veldig bra KAKE

@@ -1,4 +1,4 @@
-package kapittel71;
+package no.nav.iftikhar.kapittel71;
 
 import java.util.Arrays;
 import java.util.Random;

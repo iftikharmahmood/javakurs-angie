@@ -1,4 +1,4 @@
-package kapittel11;
+package no.nav.iftikhar.kapittel11;
 
 
 public class Geometri {

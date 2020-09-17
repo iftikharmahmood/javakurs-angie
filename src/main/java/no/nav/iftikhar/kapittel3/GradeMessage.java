@@ -1,10 +1,14 @@
 package no.nav.iftikhar.kapittel3;
 
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class GradeMessage {
+
+    private static final Logger log = Logger.getLogger("");
+
     public static void main(String args[]){
-        System.out.println("Tast inn dine karakterer");
+        log.info("Tast inn dine karakterer");
         Scanner scanner = new Scanner(System.in);
         String karakter = scanner.next();
 

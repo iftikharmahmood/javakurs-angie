@@ -1,4 +1,4 @@
-package kapittel7Madlibs;
+package no.nav.iftikhar.kapittel7Madlibs;
 import java.util.Scanner;
 
 /*

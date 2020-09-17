@@ -1,7 +1,4 @@
-package kapittel71;
-
-import java.util.Arrays;
-import java.util.Random;
+package no.nav.iftikhar.kapittel71;
 
 public class Xtotto {
     /**

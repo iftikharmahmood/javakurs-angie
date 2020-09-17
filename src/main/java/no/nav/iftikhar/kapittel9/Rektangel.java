@@ -1,4 +1,4 @@
-package kapittel9;
+package no.nav.iftikhar.kapittel9;
 
 public class Rektangel {
 

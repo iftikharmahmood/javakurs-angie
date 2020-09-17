@@ -1,4 +1,4 @@
-package kapittel11b.Madlibs;
+package no.nav.iftikhar.kapittel11b.Madlibs;
 
 /**
  * 1. Your optional exercise for this chapter is to create an abstract class called Animal,
@@ -14,17 +14,15 @@ public class Farm {
     public static void main(String args[]) {
 
         // teste ut Kamel
+        new Camel().makeSound();
 
-        System.out.println(" Kamlen sier " + Camel.makesound());
-
-        System.out.println(" Mate kamelen " + Camel.eat());
+        System.out.println(" Mate kamelen ");
+        new Camel().eat();
 
 
 
         //teste ut Duck
-        System.out.println(" Donald Duck sier " + Duck.makesound());
-
-        System.out.println(" Mate Donald Duck " + Duck.eat());
+        new Duck().makeSound();
     }
 
 

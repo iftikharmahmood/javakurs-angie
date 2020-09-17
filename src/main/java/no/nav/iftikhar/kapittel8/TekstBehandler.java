@@ -1,4 +1,4 @@
-package kapittel8;
+package no.nav.iftikhar.kapittel8;
 
 public class TekstBehandler {
 
