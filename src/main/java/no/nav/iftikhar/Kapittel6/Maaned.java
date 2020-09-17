@@ -1,4 +1,4 @@
-package Kapittel6;
+package no.nav.iftikhar.Kapittel6;
 
 
 /*

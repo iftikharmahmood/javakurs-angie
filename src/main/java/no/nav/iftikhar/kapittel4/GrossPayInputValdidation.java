@@ -1,4 +1,4 @@
-package kapittel4;
+package no.nav.iftikhar.kapittel4;
 /*
 *WHILE LOOP
 * hver butikkansatt tjener 150 kr pr time. Lag et program som tillater ansatte å taste inn antall arbeidstimer utført pr uke.

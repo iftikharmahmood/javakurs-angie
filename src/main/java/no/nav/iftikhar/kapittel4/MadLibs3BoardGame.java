@@ -1,4 +1,4 @@
-package kapittel4;
+package no.nav.iftikhar.kapittel4;
 
 /*
 *Brettspill

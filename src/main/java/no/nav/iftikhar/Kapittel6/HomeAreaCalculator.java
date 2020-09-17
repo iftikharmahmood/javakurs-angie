@@ -1,7 +1,5 @@
-package Kapittel6;
+package no.nav.iftikhar.Kapittel6;
 
-
-import java.util.concurrent.atomic.AtomicBoolean;
 
 /*
 *Lag en klasse som instanserer Rectangle klasse for å finne arealet på 2 rom i et hus

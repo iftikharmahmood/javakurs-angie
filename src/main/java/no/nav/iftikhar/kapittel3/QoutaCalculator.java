@@ -1,4 +1,4 @@
-package kapittel3;
+package no.nav.iftikhar.kapittel3;
 /*
 *IF ELSE
 * All sales people are expected to make atleast 10 sales each week.

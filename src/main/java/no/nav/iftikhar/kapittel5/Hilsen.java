@@ -1,4 +1,4 @@
-package kapittel5;
+package no.nav.iftikhar.kapittel5;
 /*
 * Første METODE
 * Lag en metode som ber bruker taste3 inn navnet, og deretter hilser bruker adressert med navne.

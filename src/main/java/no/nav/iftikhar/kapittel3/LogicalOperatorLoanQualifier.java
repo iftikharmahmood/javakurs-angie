@@ -1,4 +1,4 @@
-package kapittel3;
+package no.nav.iftikhar.kapittel3;
 /*
 *LOGICAL OPERATORS:
 * To qualify for a loan, a person must make at least 300000,00 kr

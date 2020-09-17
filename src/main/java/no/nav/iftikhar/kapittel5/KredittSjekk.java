@@ -1,4 +1,4 @@
-package kapittel5;
+package no.nav.iftikhar.kapittel5;
 /*
 * VARIABLENES SCOPE / VIRKEOMRÅDE
 * Lag et program for rask kreditt sjekk, som godkjenner alle som tjener 250000 kroner

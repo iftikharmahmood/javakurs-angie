@@ -1,4 +1,4 @@
-package Kapittel6Reloaded;
+package no.nav.iftikhar.Kapittel6Reloaded;
 /*
 *Program for detaljert telefon regning i objekt-orientert stil
 *

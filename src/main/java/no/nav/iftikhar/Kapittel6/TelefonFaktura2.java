@@ -1,6 +1,4 @@
-package Kapittel6;
-
-import java.util.Scanner;
+package no.nav.iftikhar.Kapittel6;
 
 /*
  * OVERLOAD METHOTS
