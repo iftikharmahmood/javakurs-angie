@@ -45,7 +45,7 @@ public class MoneyGame {
         } else if (beløp > 100){
             System.out.println(" Spille er tapt, du gikk " + (beløp - 100) + " ører over 1 krone");
         } else {
-            System.out.println(" Spille er tapt,  du er  " + (100 - beløp) + " under 1 krone");
+            System.out.println(" Spille er tapt,  du er  " + (100 - beløp) + " ører under 1 krone");
         }
 
     }
