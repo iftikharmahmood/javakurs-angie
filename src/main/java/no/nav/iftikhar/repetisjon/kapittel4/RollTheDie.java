@@ -17,17 +17,17 @@ import java.util.Random;
  */
 public class RollTheDie {
 
-    public static void main(String arg[]) {
+    public static void main(String[] arg) {
 
         Random random = new Random();
-        System.out.println(" This is a board game. You roll a die to get a random number, then you advance on the board eqvivalent to the number");
-        System.out.println(" If you reach the goal at boardlocation nr 20 in 5 rolls, you win");
-        System.out.println(" If you do not reach the goal at boardlocation nr 20 in 5 rolls, you loose, this is also the case if you et further than 20");
+        System.out.println(" This is a board game. You roll a die to get a random number, then you advance on the board equivalent to the number");
+        System.out.println(" If you reach the goal at board location nr 20 in 5 rolls, you win");
+        System.out.println(" If you do not reach the goal at board location nr 20 in 5 rolls, you loose, this is also the case if you et further than 20");
         System.out.println();
 
         int position = 0;
         int i;
-        int left = 0;
+        int left;
 
         for (i = 1; i < 5; i++) {
             System.out.println();
@@ -37,22 +37,22 @@ public class RollTheDie {
             System.out.println();
             position = position + die;
 
-            if (position < 20 && i <= 5) {
+            if (position < 20) {
                 left = position - 20;
-                System.out.println("Your carret is moved to position: " + position);
-                System.out.println("You have " + left + " positions left to achive goal");
+                System.out.println("Your caret is moved to position: " + position);
+                System.out.println("You have " + left + " positions left to achieve goal");
                 System.out.println();
             }
         }
 
         if (position == 20 && i == 5) {
             System.out.println(" You have won the game");
-            System.out.println(" You achived position 20 with 5 rolls");
+            System.out.println(" You achieved position 20 with 5 rolls");
 
         } else if (position < 20) {
             System.out.println(" You lost the game");
-            System.out.println(" Your carrets current position is " + position);
-            System.out.println(" You are in lack of " + (20 - position) + " Positions to achive goal of 20 and you have rolled the die " +i+ " times");
+            System.out.println(" Your carets current position is " + position);
+            System.out.println(" You are in lack of " + (20 - position) + " Positions to achieve goal of 20 and you have rolled the die " +i+ " times");
 
         } else {
             System.out.println(" You lost the game");
