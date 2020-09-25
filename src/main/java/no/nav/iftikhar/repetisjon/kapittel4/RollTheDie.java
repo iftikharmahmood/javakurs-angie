@@ -1,6 +1,8 @@
 package no.nav.iftikhar.repetisjon.kapittel4;
+
 import java.util.Random;
-/*
+
+/**
  * The objective of this game is to travel the entire game board of 20 spaces within 5 die rolls.
  * Roll the die for the user (generate a Random number between 1 – 6) and advance the user that number of spaces on the game board.
  *
@@ -17,7 +19,7 @@ import java.util.Random;
  */
 public class RollTheDie {
 
-    public static void main(String[] arg) {
+    public static void main(String[] args) {
 
         Random random = new Random();
         System.out.println(" This is a board game. You roll a die to get a random number, then you advance on the board equivalent to the number");
@@ -31,7 +33,7 @@ public class RollTheDie {
 
         for (i = 1; i < 5; i++) {
             System.out.println();
-            System.out.println("Roll number: " +i);
+            System.out.println("Roll number: " + i);
             int die = random.nextInt(6) + 1;
             System.out.println("You rolled number: " + die);
             System.out.println();
@@ -52,7 +54,7 @@ public class RollTheDie {
         } else if (position < 20) {
             System.out.println(" You lost the game");
             System.out.println(" Your carets current position is " + position);
-            System.out.println(" You are in lack of " + (20 - position) + " Positions to achieve goal of 20 and you have rolled the die " +i+ " times");
+            System.out.println(" You are in lack of " + (20 - position) + " Positions to achieve goal of 20 and you have rolled the die " + i + " times");
 
         } else {
             System.out.println(" You lost the game");
@@ -61,6 +63,6 @@ public class RollTheDie {
         }
 
 
-            System.out.println(" *********************************** GAME OVER *****************************************");
+        System.out.println(" *********************************** GAME OVER *****************************************");
     }
 }
