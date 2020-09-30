@@ -1,8 +1,8 @@
 /**
- * input the plan fee and the number of overage minutes. And then you're going to charge 25 cents for every minute that they've gone over, and then a 15% tax on the subtotal.
- *
- * I want you to create separate methods to calculate the tax, to calculate the overage fees, and to calculate and print the final total.
- *
+ * input the plan fee and the number of overage minutes.
+ * And then you're going to charge 25 cents for every minute that they've gone over, and then tax on the subtotal.
+ * I want you to create separate methods to calculate the tax, to calculate the overage fees,
+ * and to calculate and print the final total.
  * Please print this as an itemized bill.
  * Enter base cost of the plan:
  * 82.45
@@ -74,7 +74,7 @@ public class PhoneBill {
         System.out.println("    .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   ");
         System.out.println(" Faste kostnader denne termin              = " + fasteKostnader + " kroner.");
         System.out.println(" overforbruk denne termin                  = " + overforbruk + " kroner.");
-        System.out.println(" Merverdig avgift                          = " + mva + " kroner.");
+        System.out.println(" Herav merverdig avgift                    = " + mva + " kroner.");
         System.out.println("--------------------------------------------------------------------------------------------");
         System.out.println(" Totalt å betale denne termin              = " + total + " kroner.");
         System.out.println("============================================================================================");
