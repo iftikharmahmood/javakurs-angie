@@ -1,4 +1,6 @@
-package no.nav.iftikhar.repetisjon.kapittel5;
+package no.nav.iftikhar.repetisjon.kapittel6;
+
+import no.nav.iftikhar.repetisjon.kapittel6.Car;
 
 public class DriveCar {
 
@@ -72,7 +74,7 @@ public class DriveCar {
         System.out.println(" Motorstatus på MIN BIL er: " + engineStatus);
         System.out.println(" Status lys på MIN BIL er: " + lys);
         System.out.println(" Taket på MIN BIL er: " + tak);
-        System.out.println(" BIL 1 er nå i: " + gir + " posisjon");
+        System.out.println(" MIN BIL er nå i: " + gir + " posisjon");
         System.out.println(" Farten på MIN BIL er for øyeblikket : " + fart + " kilometer i timen");
         System.out.println(" Hvor befinner MIN BIL seg akkurat nå? : " + bilStatus);
     }

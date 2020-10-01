@@ -1,4 +1,4 @@
-package no.nav.iftikhar.repetisjon.kapittel5;
+package no.nav.iftikhar.repetisjon.kapittel6;
 
 public class TheCube {
 
