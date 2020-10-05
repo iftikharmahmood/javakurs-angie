@@ -25,7 +25,7 @@ public class HomeAreaCalculatorRedo {
         System.out.println(" Tast inn lengden av rommet eller stedet: ");
         double lengde = scanner.nextDouble();
 
-        System.out.println(" Tast inn bredden v rommet eller stedet: ");
+        System.out.println(" Tast inn bredden av rommet eller stedet: ");
         double bredde = scanner.nextDouble();
         return new Rectangle(lengde,bredde);
     }
