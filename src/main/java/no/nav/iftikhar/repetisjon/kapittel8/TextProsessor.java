@@ -5,19 +5,20 @@ import java.util.Scanner;
 public class TextProsessor {
 
     public static void main(String[] args){
+        TextProsessor textProsessor = new TextProsessor();
 
-        tellOrd("Dette er en tekst med noen spesialtegn som feks & - _  æ ø å £ $");
+        textProsessor.tellOrd("Dette er en tekst med noen spesialtegn som feks & - _  æ ø å £ $");
 
-        reverserTekst("Hele teksten blir reversert ");
+        textProsessor.reverserTekst("Hele teksten blir reversert ");
 
-        addSpace("DetteVarIUtgangspunktetEnTekstUtenMelllomromISegMenViFårSeEtterKjøringaDa.");
+        textProsessor.addSpace("DetteVarIUtgangspunktetEnTekstUtenMelllomromISegMenViFårSeEtterKjøringaDa.");
     }
 
     /**
      *
      * @param tekst
      */
-    private static void tellOrd(String tekst) {
+    public void tellOrd(String tekst) {
         var ord = tekst.split(" ");
         int antallOrd = ord.length;
 
@@ -34,7 +35,7 @@ public class TextProsessor {
      *
      * @param bakover
      */
-    private static void reverserTekst(String bakover) {
+    public void reverserTekst(String bakover) {
         System.out.println(bakover);
         System.out.println();
         for(int i = bakover.length()-1; i >= 0; i--){
@@ -47,7 +48,7 @@ public class TextProsessor {
      *
      * @param text
      */
-    private static void addSpace(String text){
+    public void addSpace(String text){
         System.out.println();
         System.out.println(text);
         System.out.println();

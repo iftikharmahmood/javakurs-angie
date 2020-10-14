@@ -4,7 +4,7 @@ public class Rectangle {
     private double length;
     private double width;
 
-    //eksempel på default construkctor
+    //(default construkctor)
     public Rectangle(){
         length=0;
         width=0;

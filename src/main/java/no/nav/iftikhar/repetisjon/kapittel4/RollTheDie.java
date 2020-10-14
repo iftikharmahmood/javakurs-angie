@@ -19,8 +19,8 @@ import java.util.Random;
  */
 public class RollTheDie {
 
-    public static void main(String[] args) {
 
+    public void terning(){
         Random random = new Random();
         System.out.println(" This is a board game. You roll a die to get a random number, then you advance on the board equivalent to the number");
         System.out.println(" If you reach the goal at board location nr 20 in 5 rolls, you win");
@@ -61,8 +61,6 @@ public class RollTheDie {
             System.out.println("You went " + (position - 20) + " Positions over goal within " + i + " rolls");
             System.out.println();
         }
-
-
         System.out.println(" *********************************** GAME OVER *****************************************");
     }
 }

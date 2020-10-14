@@ -10,11 +10,11 @@ public class Greeting {
         Scanner scanner=new Scanner(System.in);
         String name= scanner.next();
 
-        velkommenBruker(name);
-
+        Greeting greeting = new Greeting();
+        greeting.velkommenBruker(name);
     }
 
-    public static void velkommenBruker(String name){
+    public void velkommenBruker(String name){
         System.out.println(" Hei " + name + " Velkommen til systemet");
     }
 }

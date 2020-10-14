@@ -12,49 +12,63 @@ public class PasswordValidator {
     private String username;
     private String oldPassWord;
     private String passWord;
-    private Scanner scanner = new Scanner(System.in);
     private boolean svar = false;
     private String gammeltPassord;
     private String nyttPassord;
+    private final Scanner scanner;
+
+
+
+    public PasswordValidator(){
+        this.scanner = new Scanner(System.in);
+    }
+
+    public Scanner getScanner() {
+        return scanner;
+    }
 
     public void hentInput(){
         informasjon();
 
         System.out.println(" Tast inn ditt brukernavn");
-        setUsername(scanner.next());
+        setUsername(getScanner().next());
 
-        while (oldPassWord.isEmpty()) {
+        int lokken = 0;
+        while (svar == false) {
             System.out.println(" Tast inn ditt gamle passord : ");
-            gammeltPassord = scanner.next();
+            gammeltPassord = getScanner().next();
             passordValidator(gammeltPassord);
             if (svar) {
                 setOldPassWord(gammeltPassord);
+                lokken = 1;
             } else {
-
                 informasjon();
             }
         }
 
-        while (passWord.isEmpty()){
+        int lokkeTo = 0;
+        while (lokkeTo < 1){
             System.out.println(" Tast inn det nye passordet ditt : ");
-            nyttPassord = scanner.next();
+            nyttPassord = getScanner().next();
             passordValidator(nyttPassord);
             if (svar){
                 setPassWord(nyttPassord);
+                lokkeTo = 1;
             } else {
                 informasjon();
             }
         }
     }
 
-
     public boolean passordValidator(String passord) {
 
-        if (passord.length() >= 8 && !passord.startsWith(" ") && !passord.endsWith(" ") && !passord.isEmpty()){
+        // && !passord.startsWith(" ") && !passord.endsWith(" ") && !passord.isEmpty()
+
+        if (passord.length() >= 8 ){
             boolean harSpesialTegn = false;
             boolean harStorBokstav = false;
             boolean harLitenBokstav = false;
-            boolean harIkkeMellomrom = false;
+            boolean harMellomrom = false;
             boolean erIkkeLikBrukerNavn = true;
             boolean erIkkeLikGammeltPassord = true;
 
@@ -62,18 +76,22 @@ public class PasswordValidator {
 
                 if (isUpperCase(passord.charAt(i))){
                     harStorBokstav = true;
+                    System.out.println("Inneholder stor bosktav");
                 }
 
                 if (isLowerCase(passord.charAt(i))){
                     harLitenBokstav = true;
+                    System.out.println("Inneholder liten bosktav");
                 }
 
                 if (isWhitespace(passord.charAt(i))){
-                    harIkkeMellomrom = true;
+                    harMellomrom = true;
+                    System.out.println("Inneholder mellomrom");
                 }
 
                 if (('*' | '&' | 'æ' | 'Æ' | 'ø' | 'Ø' | '#' | '@') == (passord.charAt(i))){
                     harSpesialTegn = true;
+                    System.out.println("Inneholder spesialtegn");
                 }
 
                 if (passord.equals(getUsername())){
@@ -85,8 +103,9 @@ public class PasswordValidator {
                 }
             }
 
-            if (harSpesialTegn && harStorBokstav && harLitenBokstav && harIkkeMellomrom && erIkkeLikBrukerNavn && erIkkeLikGammeltPassord){
+            if (harSpesialTegn && harStorBokstav && harLitenBokstav && !harMellomrom && erIkkeLikBrukerNavn && erIkkeLikGammeltPassord){
                 svar = true;
+                System.out.println("Passordet er riktig verifisert");
             }
         }
         return svar;
@@ -119,7 +138,7 @@ public class PasswordValidator {
     public void informasjon(){
         System.out.println();
         System.out.println("************************ REGLER FOR ENDRING AV PASSORD I NAV **************************");
-        System.out.println(" Du har tastet feil passord!  HUSK AT:");
+        System.out.println("                                    HUSK AT:");
         System.out.println("Passordet ditt kan ikke være det samme som brukernavnet");
         System.out.println("Passordet ditt kan ikke være det samme som de 2 forrige passordene dine");
         System.out.println("Passordet ditt må være minst 8 ten tilsammen");
@@ -127,6 +146,7 @@ public class PasswordValidator {
         System.out.println("Passordet ditt må innehold store og små bokstaver, og kan inneholde bokstaver og tall");
         System.out.println("Passordet ditt må inne holde et av følgende spesialtegn");
         System.out.println("*, &, æ, Æ, ø, Ø, #, @");
+        System.out.println("                            -=- PASSORD ER IKKE BLITT SATT -=-");
         System.out.println("***************************************************************************************");
         System.out.println();
     }

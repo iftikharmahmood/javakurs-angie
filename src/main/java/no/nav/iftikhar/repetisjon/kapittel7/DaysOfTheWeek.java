@@ -18,48 +18,48 @@ import java.util.Scanner;
 
 public class DaysOfTheWeek {
 
-    private static Scanner scanner = new Scanner(System.in);
-    private static String[] daysOfTheWeek = new String[]{"Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"};
+    private String[] daysOfTheWeek = new String[]{"Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"};
 
     public static void main(String[] args){
+
+        DaysOfTheWeek daysOfTheWeek = new DaysOfTheWeek();
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println(" tast et heltall mellom 1 og 7 ");
         int tall = scanner.nextInt();
         scanner.close();
         System.out.println();
 
-        System.out.println(" Tallet du tastet tilsvarer : " + finnDag(tall) + " som er den " + tall + " dagen i uka");
+        System.out.println(" Tallet du tastet tilsvarer : " + daysOfTheWeek.finnDag(tall) + " som er den " + tall + " dagen i uka");
         System.out.println();
 
-        System.out.println(" Sum antall dager er " +  sum() +" i uka");
+        System.out.println(" Sum antall dager er " +  daysOfTheWeek.sum() +" i uka");
         System.out.println();
 
-        uka();
+        daysOfTheWeek.uka();
 
-        sort();
-
+        daysOfTheWeek.sort();
     }
 
-    private static String finnDag( int tall) {
+    public String finnDag( int tall) {
         tall = tall - 1;
         String dag = daysOfTheWeek[tall];
         return dag;
     }
 
-    private static int sum() {
+    public int sum() {
         return (daysOfTheWeek.length);
     }
 
-    private static void uka(){
+    public void uka(){
         System.out.println();
         System.out.println(" Hele uka ser slik ut : ");
         for (int teller = 0; teller < daysOfTheWeek.length; teller++){
             System.out.println(daysOfTheWeek[teller]);
         }
-
     }
 
-    private static void sort() {
+    public void sort() {
         Arrays.sort(daysOfTheWeek);
         System.out.println();
         System.out.println(" Hele uken alfabetisk sortert blir slik : ");
@@ -67,5 +67,4 @@ public class DaysOfTheWeek {
             System.out.println(daysOfTheWeek[teller]);
         }
     }
-
 }

@@ -1,38 +1,45 @@
 package no.nav.iftikhar.repetisjon.kapittel5;
 
+import java.io.InputStream;
 import java.util.Scanner;
 
 public class RaskKredittSjekk {
 
-    static int lavesteInntekt = 250000;
-    static int lavesteKredittSkaar = 700;
-    static Scanner scanner = new Scanner(System.in);
+    private final int LAVESTE_INNTEKT = 250000;
+    private final int LAVESTE_KREDITT_SKAAR = 700;
+    private Scanner scanner;
 
-    public static void main(String[] args){
 
-        double lonn = innhentLonn();
-        int kredittSkaar = innhentKredittsaar();
-        scanner.close();
-
-        boolean erKvalifisert = erBrukerKvalifisert(kredittSkaar, lonn);
-
-        informerBruker(erKvalifisert);
+    public RaskKredittSjekk(){
+         this.scanner = new Scanner(System.in);
     }
 
-    public static double innhentLonn(){
+    public RaskKredittSjekk(Scanner scanner){
+        this.scanner = scanner;
+    }
+
+    public RaskKredittSjekk(InputStream in){
+        this.scanner = new Scanner(in);
+    }
+
+    public Scanner getScanner(){
+        return scanner;
+    }
+
+    public double innhentLonn(){
         System.out.println(" Tast inn din årslønn");
-        double lonn= scanner.nextDouble();
+        double lonn = getScanner().nextDouble();
         return lonn;
     }
 
-    public static int innhentKredittsaar(){
+    public int innhentKredittsaar(){
         System.out.println(" Tast inn din kredittskår");
-        int kredittSkaar= scanner.nextInt();
+        int kredittSkaar= getScanner().nextInt();
         return kredittSkaar;
     }
 
-    private static boolean erBrukerKvalifisert(int kredittSkaar, double lonn) {
-        if (kredittSkaar >= lavesteKredittSkaar && lonn >= lavesteInntekt){
+    public boolean erBrukerKvalifisert(int kredittSkaar, double lonn) {
+        if (kredittSkaar >= LAVESTE_KREDITT_SKAAR && lonn >= LAVESTE_INNTEKT){
             return true;
         }
         else {
@@ -40,12 +47,12 @@ public class RaskKredittSjekk {
         }
     }
 
-    private static void informerBruker(boolean erKvalifisert) {
+    public String informerBruker(boolean erKvalifisert) {
         if (erKvalifisert){
-            System.out.println("Gratulerer du er blitt godkjent for lån");
+            return "Gratulerer du er blitt godkjent for lån";
         }
         else {
-            System.out.println("Avvist. Du er ikke godkjent for låneoptak");
+            return "Avvist. Du er ikke godkjent for låneoptak";
         }
     }
 }

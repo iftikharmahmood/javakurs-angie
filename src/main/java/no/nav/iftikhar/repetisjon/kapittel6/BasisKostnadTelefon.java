@@ -6,14 +6,17 @@ public class BasisKostnadTelefon {
 
 
     public BasisKostnadTelefon(double basisKostnad) {
+
         this.basisKostnad = basisKostnad;
     }
 
     public static double getBasisKostnad() {
+
         return basisKostnad;
     }
 
     public void setBasisKostnad(double basisKostnad) {
+
         this.basisKostnad = basisKostnad;
     }
 }
